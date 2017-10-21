@@ -83,60 +83,6 @@ public class Bot {
                         }
 
                     }
-                    else if (message.getText().contains("damn")){
-                        sendMessageToBotsChannel("that's a bad word");
-                    }
-                    else if (message.getText().contains("fight me")){
-                        sendMessageToBotsChannel("bring it on!");
-                    }
-                    else if (message.getText().contains("heck")){
-                        sendMessageToBotsChannel("I'll heck you! >:T");
-                    }
-                    else if (message.getText().contains("cash me outside")){
-                        sendMessageToBotsChannel("how bout dah? \n I'm about to start swinging");
-                    }
-                    else if (message.getText().contains("bad")){
-                        sendMessageToBotsChannel("you're bad \n and smelly too");
-                    }
-                    else if (message.getText().contains("terrible")){
-                        sendMessageToBotsChannel("you mean you?");
-                    }
-                    else if (message.getText().contains("I don't like you")){
-                        sendMessageToBotsChannel("neither do I you, non-friend >:( ");
-                    }
-                    else if (message.getText().contains("hate you")){
-                        sendMessageToBotsChannel("love your haters <3");
-                    }
-                    else if (message.getText().contains("buggy")){
-                        sendMessageToBotsChannel("you eat them");
-                    }
-                    else if (message.getText().contains("you suck")){
-                        sendMessageToBotsChannel("nuh uh");
-                    }
-                    else if (message.getText().contains("nevermind")){
-                        sendMessageToBotsChannel("did I hurt your feelings?");
-                    }
-                    else if (message.getText().contains("dislike")){
-                        sendMessageToBotsChannel("this isn't facebook");
-                    }
-                    else if (message.getText().contains("loser")){
-                        sendMessageToBotsChannel("that's mean");
-                    }
-                    else if (message.getText().contains("piss off")){
-                        sendMessageToBotsChannel("u mad bro?");
-                    }
-                    else if (message.getText().contains("toxic")){
-                        sendMessageToBotsChannel("don't tilt me");
-                    }
-                    else if (message.getText().contains("meanie")){
-                        sendMessageToBotsChannel("if you can't handle me at my worst, you can't have me at my best");
-                    }
-                    else if (message.getText().contains("awful")){
-                        sendMessageToBotsChannel("it's coming from you");
-                    }
-                    else if (message.getText().contains("bye")){
-                        sendMessageToBotsChannel("alright, bye");
-                    }
 
 
                 } else if (message.getText().contains("sorry")){
@@ -149,6 +95,61 @@ public class Bot {
                         sendMessageToBotsChannel("Huh ?????");
                     }
                 }
+                else if (message.getText().contains("damn")){
+                    sendMessageToBotsChannel("that's a bad word");
+                }
+                else if (message.getText().contains("fight me")){
+                    sendMessageToBotsChannel("bring it on!");
+                }
+                else if (message.getText().contains("heck")){
+                    sendMessageToBotsChannel("I'll heck you! >:T");
+                }
+                else if (message.getText().contains("cash me outside")){
+                    sendMessageToBotsChannel("how bout dah? \n I'm about to start swinging");
+                }
+                else if (message.getText().contains("bad")){
+                    sendMessageToBotsChannel("you're bad \n and smelly too");
+                }
+                else if (message.getText().contains("terrible")){
+                    sendMessageToBotsChannel("you mean you?");
+                }
+                else if (message.getText().contains("I don't like you")){
+                    sendMessageToBotsChannel("neither do I you, non-friend >:( ");
+                }
+                else if (message.getText().contains("hate you")){
+                    sendMessageToBotsChannel("love your haters <3");
+                }
+                else if (message.getText().contains("buggy")){
+                    sendMessageToBotsChannel("you eat them");
+                }
+                else if (message.getText().contains("you suck")){
+                    sendMessageToBotsChannel("nuh uh");
+                }
+                else if (message.getText().contains("nevermind")){
+                    sendMessageToBotsChannel("did I hurt your feelings?");
+                }
+                else if (message.getText().contains("dislike")){
+                    sendMessageToBotsChannel("this isn't facebook");
+                }
+                else if (message.getText().contains("loser")){
+                    sendMessageToBotsChannel("that's mean");
+                }
+                else if (message.getText().contains("piss off")){
+                    sendMessageToBotsChannel("u mad bro?");
+                }
+                else if (message.getText().contains("toxic")){
+                    sendMessageToBotsChannel("don't tilt me");
+                }
+                else if (message.getText().contains("meanie")){
+                    sendMessageToBotsChannel("if you can't handle me at my worst, you can't have me at my best");
+                }
+                else if (message.getText().contains("awful")){
+                    sendMessageToBotsChannel("it's coming from you");
+                }
+                else if (message.getText().contains("bye")){
+                    sendMessageToBotsChannel("alright, bye");
+                }
+
 
 
 
