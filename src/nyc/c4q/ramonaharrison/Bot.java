@@ -63,8 +63,8 @@ public class Bot {
 
             for (Message message : messages) {
 
-                if (message.getText().contains("Hi ")) {
-                    sendMessageToBotsChannel("How are you ?");
+                if (message.getText().contains("Hi")) {
+                    sendMessageToBotsChannel("How are you ?");git
                 } else if (message.getText().contains("how are you")) {
                     int decider = (int) (Math.random() * 2 + 1);
                     if (decider == 1) {
