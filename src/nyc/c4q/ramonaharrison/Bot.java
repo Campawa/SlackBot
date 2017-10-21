@@ -5,6 +5,7 @@ import nyc.c4q.ramonaharrison.model.Message;
 import nyc.c4q.ramonaharrison.network.*;
 import nyc.c4q.ramonaharrison.network.response.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -19,6 +20,8 @@ public class Bot {
     public Bot() {
 
     }
+
+
 
     /**
      * Sample method: tests the Slack API. Prints a message indicating success or failure.
@@ -58,11 +61,45 @@ public class Bot {
         if (listMessagesResponse.isOk()) {
             List<Message> messages = listMessagesResponse.getMessages();
 
-            System.out.println("\nMessages: ");
             for (Message message : messages) {
-                System.out.println();
-                System.out.println("Timestamp: " + message.getTs());
-                System.out.println("Message: " + message.getText());
+
+                if (message.getText().contains("Hi ")) {
+                    sendMessageToBotsChannel("How are you ?");
+                } else if (message.getText().contains("how are you")) {
+                    int decider = (int) (Math.random() * 2 + 1);
+                    if (decider == 1) {
+                        sendMessageToBotsChannel("I'm doing well, thanks");
+                    } else if (decider == 2) {
+                        sendMessageToBotsChannel("Not too bad");
+                    }
+                    else if (message.getText().contains("fuck")){
+                        int ranNumber = (int) (Math.random() * 3 + 1);
+                        if (ranNumber == 1) {
+                            sendMessageToBotsChannel("eveything will be okay! ");
+                        } else if (ranNumber == 2) {
+                            sendMessageToBotsChannel("No fuck you man !");
+                        } else if (ranNumber == 3) {
+                            sendMessageToBotsChannel(" I will try to be calm towards you !");
+                        }
+
+                    }
+                    ArrayList<String> words=new ArrayList<>();
+
+
+                } else if (message.getText().contains("sorry")){
+                    int ranNumber = (int) (Math.random() * 3 + 1);
+                    if (ranNumber == 1) {
+                        sendMessageToBotsChannel("what are you trying to say ? ");
+                    } else if (ranNumber == 2) {
+                        sendMessageToBotsChannel("say it again!");
+                    } else if (ranNumber == 3) {
+                        sendMessageToBotsChannel("Huh ?????");
+                    }
+                }
+
+
+
+
             }
         } else {
             System.err.print("Error listing messages: " + listMessagesResponse.getError());
